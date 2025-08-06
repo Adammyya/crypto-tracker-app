@@ -1,0 +1,80 @@
+.navbar{
+    display: flex;   /* this will make the navbar a flex container */
+    align-items: center;          
+    justify-content: space-between; /* this will space the items evenly with space between them */ 
+    align-items: center; 
+    padding: 20px 10%;
+    color: #ddd;
+    border-bottom: 2px solid #3c3c3c
+}
+
+.navbar .logo{
+    width: max(12vw, 120px);
+}
+
+.navbar ul{
+    display: flex; /* this will make the ul a flex container */
+    list-style: none; /* this will remove the default list style */
+    gap: 45px; /* this will add space between the list items */
+}
+
+.navbar li{
+    cursor: pointer; /* this will make the list items clickable */
+}
+
+.navbar nav-right{
+    display: flexbox; /* this will make the nav-right a flex container */
+    align-items: center; /* this will align the items vertically */
+    gap: 1rem; /* this will add space between the items */
+}
+
+.navbar select{
+    padding: 5px 8px; /* this will add padding to the select element */
+    border-radius: 6px; /* this will round the corners of the select element */
+    border: 2px solid white; /* this will remove the border of the select element */
+    background: transparent; /* this will set the background color of the select element */
+    color: white; /* this will set the text color of the select element */
+}
+
+.navbar option{
+    background: #09005c; /* this will set the background color of the option element */
+    color: white; /* this will set the text color of the option element */
+}
+
+.navbar button{
+    padding: 5px 5px; /* this will add padding to the button */
+    border-radius: 20px; /* this will round the corners of the button */
+    border: 2px solid white; /* this will remove the border of the button */
+    background: white; /* this will set the background color of the button */
+    color: #393939; /* this will set the text color of the button */
+    cursor: pointer; /* this will make the button clickable */
+    display: flexbox; /* this will make the button a flex container */
+    align-items: center; /* this will align the items vertically */ 
+    gap: 1rem; /* this will add space between the items */
+    font-size:15px; /* this will set the font size of the button */
+    font-weight: 550; /* this will set the font weight of the button */
+     margin-left: 1.5rem;
+}
+
+.navbar button img{
+    width: 13px; /* this will set the width of the image inside the button */
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 20px 5%;
+
+    }
+    .navbar button{
+        gap: 8px;
+        padding: 8px 18px;
+        font-size: 14px; /* this will set the font size of the button */ 
+    }
+    .navbar ul{
+        display: none;
+    
+    }
+    .navbar button img{
+        width: 12px;
+    }
+}
