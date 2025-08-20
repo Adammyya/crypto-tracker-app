@@ -1,0 +1,14 @@
+# render.yaml
+services:
+  - type: web
+    name: crypto-tracker-app # You can change this name if you want a different service name on Render
+    env: static # Use 'static' for a purely frontend Vite app serving static files
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm run preview"
+    # The 'publish' directory is where Vite outputs your built static files.
+    # For Vite, this is typically 'dist'.
+    publish: dist
+    # Optional: Uncomment if you need a specific Node.js version (e.g., if your project explicitly requires it)
+    # envVars:
+    #   - key: NODE_VERSION
+    #     value: "18" # e.g., "16", "18", "20"
